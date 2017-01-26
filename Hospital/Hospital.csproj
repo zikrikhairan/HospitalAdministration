@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F86185CB-A529-4AC2-86A6-1B9553932708}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hospital</RootNamespace>
+    <AssemblyName>Hospital</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Inheritance.cs" />
+    <Compile Include="Kamar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kamar.Designer.cs">
+      <DependentUpon>Kamar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Obat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Obat.Designer.cs">
+      <DependentUpon>Obat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahPasien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahPasien.Designer.cs">
+      <DependentUpon>TambahPasien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dokter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokter.Designer.cs">
+      <DependentUpon>Dokter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LupaPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LupaPassword.Designer.cs">
+      <DependentUpon>LupaPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TagihanPasienInap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TagihanPasienInap.Designer.cs">
+      <DependentUpon>TagihanPasienInap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasienInap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasienInap.Designer.cs">
+      <DependentUpon>PasienInap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TagihanPasienJalan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TagihanPasienJalan.Designer.cs">
+      <DependentUpon>TagihanPasienJalan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasienJalan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasienJalan.Designer.cs">
+      <DependentUpon>PasienJalan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Kamar.resx">
+      <DependentUpon>Kamar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Obat.resx">
+      <DependentUpon>Obat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahPasien.resx">
+      <DependentUpon>TambahPasien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokter.resx">
+      <DependentUpon>Dokter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LupaPassword.resx">
+      <DependentUpon>LupaPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TagihanPasienInap.resx">
+      <DependentUpon>TagihanPasienInap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasienInap.resx">
+      <DependentUpon>PasienInap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TagihanPasienJalan.resx">
+      <DependentUpon>TagihanPasienJalan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasienJalan.resx">
+      <DependentUpon>PasienJalan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.4.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 4.0 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital.png" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Properties\payment.jpg" />
+    <None Include="Properties\doctor.jpg" />
+    <None Include="Properties\inpatient.jpg" />
+    <None Include="Properties\Nurse.jpg" />
+    <None Include="Properties\outpatient.jpg" />
+    <None Include="Resources\400_F_12322057_gteTWpfS7ATRTSAYNmr3xxfsV3Ow1QeY.jpg" />
+    <None Include="Resources\back.jpg" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\glassy-blue-edit-icon-7099653.jpg" />
+    <None Include="Resources\Graphicloads-100-Flat-Print.ico" />
+    <None Include="Resources\Icons-Land-Points-Of-Interest-Hospital-Red-2.ico" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\next.jpg" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\update_sync_icon.jpg" />
+    <None Include="Resources\add.jpg" />
+    <None Include="Resources\check.jpg" />
+    <None Include="Resources\edit.jpg" />
+    <None Include="Resources\hospital1.ico" />
+    <None Include="Resources\print.ico" />
+    <None Include="Resources\refresh.jpg" />
+    <None Include="Resources\inpatient.jpg" />
+    <None Include="Resources\addout.jpg" />
+    <None Include="Resources\addpatient.jpg" />
+    <None Include="Resources\addpayment.jpg" />
+    <None Include="Resources\payment.jpg" />
+    <None Include="Resources\doctor.jpg" />
+    <None Include="Resources\Nurse.jpg" />
+    <None Include="Resources\outpatient.jpg" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\addout.png" />
+    <None Include="Resources\addpatient.png" />
+    <None Include="Resources\addpayment.png" />
+    <None Include="Resources\5.jpg" />
+    <None Include="Resources\0.jpg" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Resources\3.gif" />
+    <None Include="Resources\4.jpg" />
+    <Content Include="RS.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RS_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>RS.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
